@@ -121,8 +121,12 @@ LUNCH
 
 ## FROM STREAMS TO TABLES AND BACK AGAIN: A DEMO OF FLINK’S TABLE & SQL API
 
+* prototype cli SQL client
+* Uber and Alibaba already have more sophisticated solutions (like zepelin?)
+* any kind of UDFs can be created and used in SQL
+
 # To check
-* how exactly do watermarks work
+* how exactly do watermarks work, watermarking strategies
 * snapshot migration in flink 1.3, backward compatability
 * rocksdb state backend
 * storages: druid, pravega, NSDB
