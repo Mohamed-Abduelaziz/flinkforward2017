@@ -1,3 +1,6 @@
+# FlinkForward Berlin 2017
+
+* visited talks and some notes
 
 # Day 1 (2017-09-12, Tuesday)
 
@@ -102,11 +105,16 @@ LUNCH
 ## KEYNOTE: BRING FLINK TO LARGE SCALE PRODUCTION
 
 * crazy big scale flink/blink at Alibaba
-* many of the changes Alibaba did to their fork blink are now flowing back to flink  
+* many of the changes Alibaba did to their fork blink are now flowing back to flink
+* they introduced SQL on streams
+  * because there are data engineers that are not familiar with stream API programming, but know SQL very well
+* having a data QL used to be an advantage of Spark over Flink
 
 ## UNIFIED STREAM AND BATCH PROCESSING WITH APACHE FLINK’S RELATIONAL APIS
 
-* 
+* concept of the dynamic table
+  * data manipulation event stream is materialized as a view on the current accumulated state
+* you can perform queries on dynamic tables: continuous query
 
 ### To check
 * watermark
