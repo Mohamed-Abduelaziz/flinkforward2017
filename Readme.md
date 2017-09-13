@@ -109,7 +109,7 @@ LUNCH
 * crazy big scale flink/blink at Alibaba
 * many of the changes Alibaba did to their fork blink are now flowing back to flink
 * they introduced SQL on streams
-  * because there are data engineers that are not familiar with stream API programming, but know SQL very well
+  * because there are data engineers/analysts/business people that are not familiar with stream API programming, but know SQL very well
 * having a data QL used to be an advantage of Spark over Flink
 
 ## UNIFIED STREAM AND BATCH PROCESSING WITH APACHE FLINK’S RELATIONAL APIS
@@ -124,6 +124,25 @@ LUNCH
 * prototype cli SQL client
 * Uber and Alibaba already have more sophisticated solutions (like zepelin?)
 * any kind of UDFs can be created and used in SQL
+
+## A LOOK AT FLINK’S INTERNAL DATA STRUCTURES AND ALGORITHMS FOR EFFICIENT CHECKPOINTING 
+
+* 
+* do not block the pipeline
+* async checkpointing
+  * async barrier snapshotting
+* incremental snapshot
+* state backend
+  * HeapKeyedStateBackend
+  * RocksDBKeyedStateBackend
+* RocksDB
+  * C++ over JNI
+  * async
+  * incremental
+  * write optimized
+* Heap Backend
+  * copy-on-write hash map
+  * multi versioning
 
 # To check
 * how exactly do watermarks work, watermarking strategies
