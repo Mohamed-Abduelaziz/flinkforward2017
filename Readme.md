@@ -6,7 +6,9 @@
 
 ## Keynote
 
-* evolution of applications, good overview, why stream processing with state
+* evolution of applications
+* good overview
+* streaming application with state as the next evolutional step of applications
 
 ## DATA ARTISANS PRODUCT ANNOUNCMENT
 
@@ -115,9 +117,12 @@ LUNCH
 * concept of the dynamic table
   * data manipulation event stream is materialized as a view on the current accumulated state
 * you can perform queries on dynamic tables: continuous query
+* types of queries are still limited but under heavy development, upcoming release flink 1.4
 
-### To check
-* watermark
+## FROM STREAMS TO TABLES AND BACK AGAIN: A DEMO OF FLINK’S TABLE & SQL API
+
+# To check
+* how exactly do watermarks work
 * snapshot migration in flink 1.3, backward compatability
 * rocksdb state backend
 * storages: druid, pravega, NSDB
